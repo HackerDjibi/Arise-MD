@@ -64,12 +64,16 @@ async function startBot() {
         const { commands, aliases } = loadCommands()
 
         const sock = makeWASocket({
-            printQRInTerminal: true,
+            printQRInTerminal: false,
             auth: state,
             version,
             getMessage: key => messageStore.get(key.id)
         })
-
+        if (!sock.authState.creds.registered) {
+            const number = ''
+            const code = await sock.requestPairingCode(number)
+            console.log(code)
+        }
         // Gestion des événements
         sock.ev.on('connection.update', ({ connection, lastDisconnect }) => {
             if (connection === 'close') {
