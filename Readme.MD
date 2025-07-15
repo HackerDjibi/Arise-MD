@@ -18,8 +18,8 @@ Créez un fichier `.env` à la racine du projet en vous basant sur l'exemple ci-
 PREFIX=.
 OWNER_NAME=Menma
 OWNER-NUMBER=224xxxxxxx
-BOT_NAME="Arise-MD"
-DEV_NAME="Dr. Menma"
-DEV_YEAR="2025"
+BOT_NAME=Arise-MD
+DEV_NAME=Dr. Menma
+DEV_YEAR=2025
 
-```
+````
