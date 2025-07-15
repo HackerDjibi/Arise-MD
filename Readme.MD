@@ -1,4 +1,4 @@
-# ARISE-TEST Bot
+# ARISE-MD
 
 Ce projet est un bot développé pour automatiser certaines tâches spécifiques.  
 Il utilise Node.js et nécessite un fichier `.env` pour fonctionner correctement.
